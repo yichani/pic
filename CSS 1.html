@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<head>
+    <title>CSS Exercise</title>
+</head>
+
+<style>
+    body {
+        background-image: url(empire-state.jpg);
+        background-position: right top;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    [class*="hu"] {
+        color: yellow;
+        background-color: blue;
+
+    }
+
+    .yilow {
+        color: yellow;
+        text-align: center;
+        border: 2px solid blue;
+        border-left: none;
+        border-right: none;
+        border-top: none;
+        padding: 0px 0px 20px 0px;
+        opacity: 10;
+    
+
+    }
+
+    [class*="mn"] {
+
+        color: yellow;
+        text-align: center;
+        background-color: blue;
+
+
+    }
+
+    .container {
+        border: 3px solid blue;
+    }
+
+    .bttn {
+        background-color: pink; font-size: 15px;
+        font-weight: bold;
+        padding: 10px 10px;
+        border-radius: 15px;
+        cursor: pointer;
+        margin-left: 20px;
+        font-style: italic;
+
+        &:hover {
+            background-color: red;
+        }
+
+        &:active {
+            transform: scale(0.95);
+        }
+
+    }
+</style>
+
+<body>
+    <div class="container">
+        <h1 class="yilow">PAMPANGA STATE UNIVERSITY</h1>
+        <h3 class="hu">Batu, Bianca Mae</h3>
+
+        <h2 class="mn">WEB DEVELOPMENT PROGRAMMING</h2>
+        <button class="bttn">Submit</button>
+        <p class="hu">NOTE: PSU</p>
+    </div>
+</body>
+
+</html>
